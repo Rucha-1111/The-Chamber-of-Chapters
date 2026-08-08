@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Chamber of Chapters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dash-body">
+
+  <header class="dash-header">
+    <p class="brand-mark">The Chamber of Chapters</p>
+    <div class="header-right">
+      <span class="member-tag">Member: <strong id="whoami">—</strong></span>
+      <button class="ghost-btn" id="logoutBtn">Sign out</button>
+    </div>
+  </header>
+
+  <main class="dash-main">
+
+    <h1 class="dash-title">The Chamber of Chapters</h1>
+    <p class="dash-tagline">✨ a very small, very magical book tracker ✨</p>
+
+    <section class="add-drawer">
+      <p class="call-number">🪶 Quill a new entry</p>
+      <form id="addBookForm" class="add-form">
+        <div class="add-form-row">
+          <input type="text" name="title" placeholder="Book title" required>
+          <input type="text" name="author" placeholder="Author" required>
+          <select name="status">
+            <option value="TO_READ">📚 To Read</option>
+            <option value="READING">🍷 Currently Reading</option>
+            <option value="COMPLETED">🏆 Finished</option>
+          </select>
+        </div>
+        <p class="thoughts-label">✒ What are your thoughts?</p>
+        <textarea name="notes" class="thoughts-input" placeholder="Optional — jot down first impressions…" rows="2"></textarea>
+        <div class="add-form-actions">
+          <button type="submit" class="stamp-btn">Add to shelf</button>
+        </div>
+      </form>
+      <p class="form-error" id="addError"></p>
+    </section>
+
+    <section class="shelf-grid">
+      <div class="shelf-column">
+        <h2 class="shelf-column-head">📚 To Read</h2>
+        <p class="shelf-column-sub">the pile awaits</p>
+        <div class="shelf-list" id="col-TO_READ"></div>
+      </div>
+
+      <div class="shelf-column">
+        <h2 class="shelf-column-head">🍷 Currently Reading</h2>
+        <p class="shelf-column-sub">by candlelight</p>
+        <div class="shelf-list" id="col-READING"></div>
+      </div>
+
+      <div class="shelf-column">
+        <h2 class="shelf-column-head">🏆 Finished</h2>
+        <p class="shelf-column-sub">the archives</p>
+        <div class="shelf-list" id="col-COMPLETED"></div>
+      </div>
+    </section>
+
+    <p class="dash-tagline" style="margin-top:3rem;">"I solemnly swear that I am up to date on my reading." 🦉</p>
+
+  </main>
+
+<script src="js/sparkles.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

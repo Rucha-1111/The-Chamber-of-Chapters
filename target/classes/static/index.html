@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Chamber of Chapters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="landing-body">
+
+<main class="landing-scene">
+
+    <!-- LEFT: short introduction -->
+    <div class="landing-left">
+      <p class="brand-mark">The Chamber of Chapters</p>
+      <h1 class="landing-hero">Keep every book<br>on your shelf.</h1>
+      <p class="landing-intro">
+        A very small, very magical reading ledger. Track what you're
+        reading, tuck away your thoughts, and watch your shelves grow —
+        all by candlelight.
+      </p>
+      <ul class="landing-features">
+        <li><span class="f-icon">📚</span> Three cozy shelves: To Read, Reading, Finished</li>
+        <li><span class="f-icon">✒️</span> Jot down first impressions as you go</li>
+        <li><span class="f-icon">🏆</span> Rate every finished book in the archives</li>
+      </ul>
+      <p class="landing-quote">"I solemnly swear that I am up to date on my reading." 🦉</p>
+    </div>
+
+    <!-- RIGHT: login / sign up -->
+    <div class="landing-right">
+
+      <div class="card-wrap">
+        <div class="lib-card" id="loginCard">
+          <span class="punch"></span>
+          <h2 class="card-title">Sign in</h2>
+          <p class="card-sub">Welcome back to the stacks</p>
+          <form id="loginForm" class="card-form">
+            <label>Username
+              <input type="text" name="username" placeholder="Your username" required autocomplete="username">
+            </label>
+            <label>Password
+              <input type="password" name="password" placeholder="••••••••" required autocomplete="current-password">
+            </label>
+            <button type="submit" class="stamp-btn">Sign in</button>
+          </form>
+          <p class="form-error" id="loginError"></p>
+          <p class="switch-line">New here? <button class="link-btn" id="showSignup">Create an account</button></p>
+        </div>
+
+        <div class="lib-card hidden" id="signupCard">
+          <span class="punch"></span>
+          <h2 class="card-title">Join the chamber</h2>
+          <p class="card-sub">Claim your very own shelf</p>
+          <form id="signupForm" class="card-form">
+            <label>Username
+              <input type="text" name="username" placeholder="Pick a username" required autocomplete="username">
+            </label>
+            <label>Email
+              <input type="email" name="email" placeholder="you@example.com" required autocomplete="email">
+            </label>
+            <label>Password
+              <input type="password" name="password" placeholder="Create a password" required autocomplete="new-password">
+            </label>
+            <button type="submit" class="stamp-btn">Create account</button>
+          </form>
+          <p class="form-error" id="signupError"></p>
+          <p class="switch-line">Already a member? <button class="link-btn" id="showLogin">Sign in</button></p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+<script src="js/sparkles.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

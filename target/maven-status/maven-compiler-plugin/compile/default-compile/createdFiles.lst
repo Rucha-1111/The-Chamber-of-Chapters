@@ -1,0 +1,7 @@
+com\booktracker\controller\AuthController.class
+com\booktracker\model\User.class
+com\booktracker\controller\BookController.class
+com\booktracker\repository\BookRepository.class
+com\booktracker\BookTrackerApplication.class
+com\booktracker\model\Book.class
+com\booktracker\repository\UserRepository.class
